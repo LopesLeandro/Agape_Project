@@ -5,7 +5,7 @@
 **Create an enviroment to show data driven insights;**
 
 ## 2. Dev Team
-* [Leandro Lopes](https://github.com/LopesLeandro)
+* [Leandro Lopes](https://github.com/LopesLeandro/)
 * [Luan Gomes Silva](https://github.com/Luan2002/Luan2002)
 * [Pedro Eccel Zimmermann](https://github.com/PedroZimmer)
 * [Rodrigo Worlitz](https://none)
