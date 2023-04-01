@@ -1,0 +1,19 @@
+/*
+Convert svg color with CSS3
+
+Main logo color: #812727
+https://codepen.io/sosuke/pen/Pjoqqp
+Transformed color: filter: invert(22%) sepia(35%) saturate(2433%) hue-rotate(332deg) brightness(84%) contrast(90%);
+Code:
+	1	Add the SVG image using an <img> tag.<img src="dotted-arrow.svg" class="filter-green"/>
+	2	
+	3	To filter to a specific color, use the following Codepen (click here to open the codepen) to convert a hexadecimal color code to a CSS filter:For example, output for #00EE00 isfilter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+	4	
+	5	Add the CSS filter into this class..filter-green{
+	6	    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+	7	}
+
+
+
+
+*/
