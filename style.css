@@ -20,6 +20,9 @@ body{
     min-height: 100vh;
     background: var(--bg-color);
     color: var(--text-color);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 header{
@@ -148,59 +151,58 @@ menu {
     display: none;
 }
 
-main{
+/* main{
     top: 60px;
     position: fixed;
     /* width: 100%; */
     /* height: 60px; */
     /* z-index: 100002; */
-    display: flex;
+    /*display: flex;
+    justify-content: center;
     align-items: center;
+
     background: var(--bg-color);
-}
-div #carrousel{
-    height: 100%;
-    width: 100vw;
+} */
+
+/* CARROUSEL START CONFIG */
+.carrousel{
+    /* width: 100vw; */
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     background-color: var(--hover-color);
-
 }
-/* CARROUSEL START CONFIG */
-.carrousel{
-    width: 800px;
-    height: 500px;
-    /* width: 100%; */
-    /* height: 80vh; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* flex-direction: column; */
+.slider{
+    /* width: 100vw;
+    height: 50vh; */
     background-color: var(--hover-color);
     overflow: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
-.carrousel-content{
+.slides{
     width: 500%;
-    height: 500px;
+    /* height: 500px; */
     display: flex;
 }
 
-.carrousel-content input{
+.slides input{
     display: none;
 }
 
-.carrousel{
+.slide{
     width: 20%;
     transition: 2s;
 }
 
-.carrousel img{
-    width: 800px;
-    height: 500px;
-    /* object-fit: cover; */
+.slide img{
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* .sobre{
