@@ -13,7 +13,7 @@
     --main-color: #812828;
     --hover-color: #EAD24C;
     --none-color: #fff;
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%; /* 1rem = 10px | 1.2rem = 12px*/
 }
 
 body{
@@ -95,7 +95,7 @@ menu {
 
 .navbar a{
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     padding: 5px 0;
     margin: 0 30px;
@@ -119,7 +119,7 @@ menu {
     margin-right: 25px;
     margin-left: 10px;
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     transition: all .50s ease;
 }
@@ -140,26 +140,76 @@ menu {
 }
 
 #menu-icon{
-    font-size: 35px;
+    /* font-size: 35px; */
+    font-size: 3.5rem;
     color: var(--text-color);
     cursor: pointer;
     z-index: 10001;
     display: none;
 }
+
 main{
-    min-height: 100vh;
-}
-
-
-.carrousel{
-    width: 100%;
-    height: 80vh;
+    top: 60px;
+    position: fixed;
+    /* width: 100%; */
+    /* height: 60px; */
+    /* z-index: 100002; */
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--hover-color);
+    background: var(--bg-color);
 }
+div #carrousel{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--hover-color);
+
+}
+/* CARROUSEL START CONFIG */
+.carrousel{
+    width: 800px;
+    height: 500px;
+    /* width: 100%; */
+    /* height: 80vh; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* flex-direction: column; */
+    background-color: var(--hover-color);
+    overflow: hidden;
+}
+
+.carrousel-content{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.carrousel-content input{
+    display: none;
+}
+
+.carrousel{
+    width: 20%;
+    transition: 2s;
+}
+
+.carrousel img{
+    width: 800px;
+    height: 500px;
+    /* object-fit: cover; */
+}
+
+/* .sobre{
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--hover-color);
+} */
 
 @media (max-width: 1280px){
     header{
