@@ -1,7 +1,8 @@
 <p>Atuamos no desenvolvimento de crianças e adolescentes através do acesso à educação, arte e cultura. Acreditamos no poder da unidade e que você é peça fundamental para promovermos a equidade social. A sua doação contribui para cumprimos nossa missão, gerando muita transformação social. Temos como missão propagar o amor ágape e apoiar o desenvolvimento de crianças e adolescentes em situação de vulnerabilidade social de Joinville através da educação, arte, esporte e cultura além de romper as barreiras que distanciam as comunidades dos direitos humanos.</p>
 
+<!--
 <h1>
-    <!--<p>Outra opção</p>
+    <p>Outra opção</p>
 </h1>
 <p>Surgimos em 2018 como um grupo de voluntariado e desde então, o Somos Ágape beneficiou aproximadamente 800 famílias através de arrecadações e campanhas de alimentos, roupas, kits escolares e outros. Já com nosso projeto Asas da Educação, atendemos cerca de 50 jovens (em duas edições).  Em 2022 nos tornamos ONG para ampliar nossa potência e impacto social.  Somos um Instituto que tem por objetivo oportunizar o acesso à educação, arte, esporte e cultura para crianças, adolescentes e jovens em situação de vulnerabilidade social, impulsionando sonhos, gerando pertencimento e protagonismo através de projetos que aproximem o público beneficiado a oportunidades que proporcionem a melhora na qualidade de vida.</p>
 -->
