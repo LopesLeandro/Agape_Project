@@ -25,6 +25,10 @@ body{
     align-items: center; */
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 header{
     position: fixed;
     width: 100%;
