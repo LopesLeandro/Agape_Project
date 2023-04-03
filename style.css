@@ -107,17 +107,7 @@ footer {
       .instagram_data { grid-area: instagram_data; }
 }
 
-
-  
-
-@media (max-width: 768px){
-    footer {
-        
-    }
-}
-    
-
-
+ 
 
 .logo{
     display: flex;
