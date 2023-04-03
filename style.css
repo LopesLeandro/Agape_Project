@@ -346,4 +346,21 @@ menu {
     .slide img{
         max-height: 500px;
     }
+
+    .main_grid{
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto auto; 
+        gap: 5px 2px; 
+        grid-template-areas: 
+            "sobre"
+            "projetos"
+            "noticias"
+            "contato"; 
+        }
+    .sobre_instituto { grid-area: sobre; }
+    .projetos_instituto { grid-area: projetos; }
+    .noticias_instituto { grid-area: noticias; }
+    .contato_instituto { grid-area: contato; }
+
 }
