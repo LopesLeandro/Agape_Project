@@ -25,6 +25,19 @@ body{
     align-items: center; */
 }
 
+@media screen and (max-width: 767px) {
+    /* Define o estilo dos elementos com a classe main_grid quando a tela tem no máximo 767px */
+    .main_grid {
+        display: block; /* Faz com que os elementos com a classe main_grid sejam exibidos como blocos */
+    }
+    
+    /* Define o estilo dos elementos com a classe sobre_instituto, projetos_instituto e noticias_instituto quando a tela tem no máximo 767px */
+    .sobre_instituto, .projetos_instituto, .noticias_instituto {
+        margin-bottom: 20px; /* Adiciona uma margem inferior de 20px nos elementos com as classes sobre_instituto, projetos_instituto e noticias_instituto */
+    }
+}
+
+
 html, body {
   scroll-behavior: smooth;
 }
@@ -77,7 +90,7 @@ footer {
 
 }
 
-/* @media (min-width: 800px){
+@media (min-width: 800px){
     .container {  display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -109,7 +122,7 @@ footer {
       .endereco_data { grid-area: endereco_data; }
       
       .instagram_data { grid-area: instagram_data; }
-} */
+} 
 
  
 
