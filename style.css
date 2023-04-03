@@ -20,22 +20,12 @@ body{
     min-height: 100vh;
     background: var(--bg-color);
     color: var(--text-color);
+    font-size: 15px;
     /* display: flex;
     justify-content: center;
     align-items: center; */
 }
 
-@media screen and (max-width: 767px) {
-    /* Define o estilo dos elementos com a classe main_grid quando a tela tem no máximo 767px */
-    .main_grid {
-        display: block; /* Faz com que os elementos com a classe main_grid sejam exibidos como blocos */
-    }
-    
-    /* Define o estilo dos elementos com a classe sobre_instituto, projetos_instituto e noticias_instituto quando a tela tem no máximo 767px */
-    .sobre_instituto, .projetos_instituto, .noticias_instituto {
-        margin-bottom: 20px; /* Adiciona uma margem inferior de 20px nos elementos com as classes sobre_instituto, projetos_instituto e noticias_instituto */
-    }
-}
 
 
 html, body {
@@ -293,7 +283,7 @@ footer {
 }
 
 /* CARROUSEL START CONFIG */
-.carrousel{
+#carrousel{
     height: 100vh;
     display: flex;
 }
@@ -456,7 +446,7 @@ footer {
 }
 
 @media (max-width: 900px){
-    .carrousel{
+    #carrousel{
         max-height: 500px;
     }
     .slide img{
@@ -466,3 +456,58 @@ footer {
     
 
 }
+
+
+@media (min-width: 900px){
+    .container-main {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "carrosel carrosel"
+          "sobre sobre"
+          "projetos projetos"
+          "noticias noticias";
+      }
+      
+      .carrosel { grid-area: carrosel; }
+      
+      .sobre { grid-area: sobre; }
+      
+      .projetos { grid-area: projetos; }
+      
+      .noticias { grid-area: noticias; }
+}
+
+
+@media (max-width: 900px) {
+    /*.container-main {  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr 1fr 1fr 1fr 1rem 1fr 1fr ;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "carrosel carrosel"
+          "carrosel carrosel"
+          "sobre sobre"
+          "sobre sobre"
+          "projetos projetos"
+          "projetos projetos"
+          "noticias noticias"
+          "noticias noticias";
+      }
+      
+      .carrosel { grid-area: carrosel; }
+      
+      .sobre { grid-area: sobre; }
+      
+      .projetos { grid-area: projetos; }
+      
+      .noticias { grid-area: noticias; }
+      */
+      
+
+    }

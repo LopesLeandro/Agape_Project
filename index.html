@@ -23,7 +23,12 @@
 
     <title>Somos Agape</title>
 </head>
+
+
+
 <body>
+
+
     <header>
         <a href="#" class="logo"><span><img src="Assets/logo.png" alt=""></span></a>
         <ul class="navbar">
@@ -45,88 +50,97 @@
 
 
     <main>
-        <div class="carrousel">
+        
+        <div class="container-main">
+
             <!--- CARROUSEL -->
-            <!--Slide images start-->
-            <div class="slider">
-                <div class="slides">
-                    <!--Radio buttons start-->
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                    <!--Radio buttons end-->
-                    <!--Slide images start-->
-                    <div class="slide first">
-                        <img src="./Assets/carrousel/imagem-1.JPG" alt="">
+            <div id="carrousel" class="carrosel">
+                <!--- CARROUSEL -->
+                <!--Slide images start-->
+                <div class="slider">
+                    <div class="slides">
+                        <!--Radio buttons start-->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <!--Radio buttons end-->
+                        <!--Slide images start-->
+                        <div class="slide first">
+                            <img src="./Assets/carrousel/imagem-1.JPG" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./Assets/carrousel/imagem-2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./Assets/carrousel/imagem-3.JPG" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./Assets/carrousel/imagem-4.JPG" alt="">
+                        </div>
+                        <!--Slide images end-->
+                        <!--Auto navigation start-->
+                        <div class="navigation-auto">
+                            <div for="radio1" class="auto-btn1"></div>
+                            <div for="radio2" class="auto-btn2"></div>
+                            <div for="radio3" class="auto-btn3"></div>
+                            <div for="radio4" class="auto-btn4"></div>
+                        </div>
+                        <!--Auto navigation end-->
                     </div>
-                    <div class="slide">
-                        <img src="./Assets/carrousel/imagem-2.jpg" alt="">
+                    <!--Manual navigation start-->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
                     </div>
-                    <div class="slide">
-                        <img src="./Assets/carrousel/imagem-3.JPG" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="./Assets/carrousel/imagem-4.JPG" alt="">
-                    </div>
-                    <!--Slide images end-->
-                    <!--Auto navigation start-->
-                    <div class="navigation-auto">
-                        <div for="radio1" class="auto-btn1"></div>
-                        <div for="radio2" class="auto-btn2"></div>
-                        <div for="radio3" class="auto-btn3"></div>
-                        <div for="radio4" class="auto-btn4"></div>
-                    </div>
-                    <!--Auto navigation end-->
+                    <!--Manual navigation end-->
                 </div>
-                <!--Manual navigation start-->
-                <div class="navigation-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                </div>
-                <!--Manual navigation end-->
+                <!--Slide images end-->
             </div>
-            <!--Slide images end-->
-        </div>
 
 
 
-        <!--- SOBRE O INSTITUTO -->
-        <div class="main_grid">
-            <section id="sobre" class="sobre">
-                <div class="sobre_instituto">
-                    <h1>Sobre</h1>
-                    <p id="texto_sobre"></p>
-                </div>
-            </section>
-
+            <!--- SOBRE O INSTITUTO -->
+            <div class="sobre">
+                <section id="sobre">
+                    <div class="sobre_instituto">
+                        <h1>Sobre</h1>
+                        <p id="texto_sobre"></p>
+                    </div>
+                </section>
+            </div>
 
             <!--- PROJETOS -->
-            <section id="projetos">
-                <div class="projetos_instituto">
-                    <h1>Projetos</h1>
-                    <p id="texto_projetos"></p>
-                </div>
+            <div class="projetos">
+                <section id="projetos">
+                    <div class="projetos_instituto">
+                        <h1>Projetos</h1>
+                        <p id="texto_projetos"></p>
+                    </div>
                 </section>
-
+            </div>
 
             <!--- NOTÍCIAS -->
-            <section id="noticias">
-                <div class="noticias_instituto">
-                <h1>Notícias</h1>
-                <p id="texto_noticias"></p>
-                </div>
-            </section>
+            <div class="noticias">
+                <section id="noticias">
+                    <div class="noticias_instituto">
+                    <h1>Notícias</h1>
+                    <p id="texto_noticias"></p>
+                    </div>
+                </section>
+            </div>
 
             
-        </div>
 
-
+    </div>
     </main>
     
+
+
     <footer>
+        <!--- RODAPÉ -->
         <section id="rodape">
             <div class="container">
             <div class="info"><p>Informações de contato</p></div>
@@ -141,22 +155,12 @@
             <div class="instagram"><p>Instagram</p></div>
             <div class="instagram_data"><a href="https://www.instagram.com/institutosomosagape" target="_blank">@institutosomosagape</a></div>
         </div>
-    </section>
-        
-        <!--
-            <div class="contato_instituto">
-            <h2>Informações de contato</h2>
-            <li><p>CNPJ: 46.190.994/0001-57</p></li>
-            <li>Email: contato@institutosomosagape.org</li>
-            <li>Telefone: (47) 99999-9999</li>
-            <li>Endereço: Rua Exemplo, 123 - Bairro, Joinville - SC, 89000-000</li>
-            <li>Instagram: <a href="https://www.instagram.com/institutosomosagape" target="_blank">@institutosomosagape</a></li>
-            </div>
-        -->
+        </section>  
     </footer>
-    <!-- Link para o arquivo JS-->
-    <script type="text/javascript" src="js/script.js">
 
-    </script>
+
+    <!-- Link para o arquivo JS-->
+    <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
