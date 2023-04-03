@@ -316,10 +316,9 @@ menu {
 
 @media (max-width: 900px){
     .carrousel{
-        height: 30vh;
         max-height: 500px;
     }
     .slide img{
-        height: 30vh;
+        max-height: 500px;
     }
 }
