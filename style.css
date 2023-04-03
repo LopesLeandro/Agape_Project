@@ -61,17 +61,62 @@ footer {
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
-    
     bottom: 0;
     width: 100%;
     height: 10%;
     display: flex;
+    align-content: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     color: rgb(255, 255, 255);
 
 }
+
+@media (min-width: 800px){
+    .container {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "info cnpj email telefone endereco instagram"
+          "info cnpj_data email_data telefone_data endereco_data instagram_data";
+      }
+      
+      .cnpj { grid-area: cnpj; }
+      
+      .email { grid-area: email; }
+      
+      .telefone { grid-area: telefone; }
+      
+      .endereco { grid-area: endereco; }
+      
+      .instagram { grid-area: instagram; }
+      
+      .info { grid-area: info; }
+      
+      .cnpj_data { grid-area: cnpj_data; }
+      
+      .email_data { grid-area: email_data; }
+      
+      .telefone_data { grid-area: telefone_data; }
+      
+      .endereco_data { grid-area: endereco_data; }
+      
+      .instagram_data { grid-area: instagram_data; }
+}
+
+
+  
+
+@media (max-width: 768px){
+    footer {
+        
+    }
+}
+    
+
 
 
 .logo{
@@ -411,20 +456,6 @@ footer {
         max-height: 500px;
     }
 
-    .main_grid{
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: auto auto auto auto; 
-        gap: 5px 2px; 
-        grid-template-areas: 
-            "sobre"
-            "projetos"
-            "noticias"
-            "contato"; 
-        }
-    .sobre_instituto { grid-area: sobre; }
-    .projetos_instituto { grid-area: projetos; }
-    .noticias_instituto { grid-area: noticias; }
-    .contato_instituto { grid-area: contato; }
+    
 
 }
