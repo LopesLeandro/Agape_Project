@@ -482,3 +482,32 @@ footer {
 }
 
 
+@media (max-width: 900px) {
+    /*.container-main {  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr 1fr 1fr 1fr 1rem 1fr 1fr ;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "carrosel carrosel"
+          "carrosel carrosel"
+          "sobre sobre"
+          "sobre sobre"
+          "projetos projetos"
+          "projetos projetos"
+          "noticias noticias"
+          "noticias noticias";
+      }
+      
+      .carrosel { grid-area: carrosel; }
+      
+      .sobre { grid-area: sobre; }
+      
+      .projetos { grid-area: projetos; }
+      
+      .noticias { grid-area: noticias; }
+      */
+      
+
+    }
