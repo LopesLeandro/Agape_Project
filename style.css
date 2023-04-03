@@ -77,7 +77,7 @@ footer {
 
 }
 
-@media (min-width: 800px){
+/* @media (min-width: 800px){
     .container {  display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -109,7 +109,7 @@ footer {
       .endereco_data { grid-area: endereco_data; }
       
       .instagram_data { grid-area: instagram_data; }
-}
+} */
 
  
 
@@ -405,7 +405,7 @@ footer {
 
 @media (max-width: 1090px){
     #menu-icon{
-        display: block;
+        display: inline-block;
     }
     .navbar{
         position: absolute;
