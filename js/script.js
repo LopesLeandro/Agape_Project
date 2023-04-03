@@ -12,3 +12,14 @@ fetch('Website_text/sobre.txt')
                 .then(text => {
                     document.getElementById('texto_sobre').innerHTML = text;
                 });
+
+
+// Carrousel AUTO-NAVIGATION
+var counter = 1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+        counter = 1;
+    }
+}, 5000);
