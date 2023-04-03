@@ -153,7 +153,7 @@ menu {
 
 /* CARROUSEL START CONFIG */
 .carrousel{
-    height: 50vh;
+    height: 100vh;
     display: flex;
 }
 .slider{
@@ -179,7 +179,7 @@ menu {
     margin: 0;
     width: 100vw;
     min-width: 500px;
-    height: 50vh;
+    height: 100vh;
     object-fit: cover;
     
 }
