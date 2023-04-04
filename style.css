@@ -23,7 +23,7 @@ body{
     font-size: 15px;
     /* display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center; */ 
 }
 
 
@@ -47,6 +47,10 @@ header{
     transition: all .50s ease;
 }
 
+main {
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
 
 
 
@@ -58,8 +62,6 @@ footer {
     padding: 3em;
     margin-top: 20em;
     margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
     bottom: 0;
     width: 100%;
     height: 10%;
@@ -69,7 +71,7 @@ footer {
     justify-content: space-between;
     flex-direction: column;
     color: rgb(255, 255, 255);
-
+    
 }
 
 @media (min-width: 1200px){
@@ -77,7 +79,7 @@ footer {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 0px 0px;
-        grid-auto-flow: row;
+        grid-auto-flow: row;     
         grid-template-areas:
           "info cnpj email telefone endereco instagram"
           "info cnpj_data email_data telefone_data endereco_data instagram_data";
@@ -279,6 +281,8 @@ footer {
 #carrousel{
     height: 100vh;
     display: flex;
+    margin-left: -15rem;
+    margin-right: -15rem;
 }
 .slider{
     overflow: hidden;
@@ -461,52 +465,38 @@ footer {
         grid-template-areas:
           "carrosel carrosel"
           "sobre sobre"
-          "projetos projetos"
+          "projetos foto"
           "noticias noticias";
+          
         
       }
       
       .carrosel { grid-area: carrosel; }
       
-      .sobre { grid-area: sobre; }
+      .sobre {
+        grid-area: sobre; 
+        margin-top: -5em;}
       
-      .projetos { grid-area: projetos; }
+      .projetos {
+        grid-area: projetos;
+        margin: -10em;
+     }
       
-      .noticias { grid-area: noticias; }
-}
+      .noticias {
+        grid-area: noticias;
+        margin: -10em;
+     }
 
-
-/*
-.container-main {  
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
-    padding: -10px;
-    grid-template-areas:
-        "carrosel "
-        "sobre "
-        "projetos "
-        "noticias ";
-
+      .foto-body {
+        grid-area: foto;
+        margin: 10em;
     }
     
-.carrosel { grid-area: carrosel; }
-
-.sobre { grid-area: sobre; }
-
-.projetos { grid-area: projetos; }
-
-.noticias { grid-area: noticias; }
-      */
-
-  /*
-@media (max-width: 900px){
-    .container-conteudo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
 }
+
+
+.foto-body {
+
+    text-align: center  ;
 }
-*/
