@@ -1,3 +1,5 @@
+
+<div style="align-itens: center">
 <h2>Eventos futuros</h2>
 <p>Fique atento aos eventos que estão por vir e participe conosco!</p>
 <ul>
@@ -14,3 +16,4 @@
     <li>Campanha de arrecadação de brinquedos</li>
     <li>Campanha de arrecadação de material escolar</li>
 </ul>
+</div>
