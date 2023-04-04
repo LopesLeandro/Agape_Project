@@ -17,7 +17,7 @@
 }
 
 body{
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     background: var(--bg-color);
     color: var(--text-color);
     font-size: 15px;
@@ -72,7 +72,7 @@ footer {
 
 }
 
-@media (min-width: 800px){
+@media (min-width: 1200px){
     .container {  display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -133,13 +133,13 @@ footer {
     color: black;
     
 }
-
+/*
 .sobre_instituto p{
     position: inline-block;
     height: 70px;
     padding: 9px;
     
-}
+}*/
 
 
 
@@ -155,13 +155,13 @@ footer {
     color: black;
     
 }
-
+/*
 .projetos_instituto p{
     position: inline-block;
     height: 70px;
     padding: 9px;
     
-}
+}*/
 
 /*NOTICIAS INSTITUTO CONFIG*/
 .noticias_instituto{
@@ -451,7 +451,7 @@ footer {
 }
 
 
-@media (min-width: 900px){
+@media (min-width: 1024px){
     .container-main {  
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -476,32 +476,37 @@ footer {
 }
 
 
-@media (max-width: 900px) {
-    .container-main {  
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content 1fr 1fr 1fr ;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "carrosel "
-          
-          "sobre "
-          
-          "projetos "
-         
-          
-          "noticias ";
-      }
-      
-      .carrosel { grid-area: carrosel; }
-      
-      .sobre { grid-area: sobre; }
-      
-      .projetos { grid-area: projetos; }
-      
-      .noticias { grid-area: noticias; }
-      
-      
+/*
+.container-main {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    padding: -10px;
+    grid-template-areas:
+        "carrosel "
+        "sobre "
+        "projetos "
+        "noticias ";
 
     }
+    
+.carrosel { grid-area: carrosel; }
+
+.sobre { grid-area: sobre; }
+
+.projetos { grid-area: projetos; }
+
+.noticias { grid-area: noticias; }
+      */
+
+  /*
+@media (max-width: 900px){
+    .container-conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+}
+}
+*/
