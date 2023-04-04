@@ -1,5 +1,5 @@
 
-<div style="align-itens: center">
+
 <h2>Eventos futuros</h2>
 <p>Fique atento aos eventos que estão por vir e participe conosco!</p>
 <ul>
