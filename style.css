@@ -455,7 +455,7 @@ footer {
     .container-main {  
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: max-content 1fr 1fr 1fr;
+        grid-template-rows: max-content 20vw 30vw 20vw;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
