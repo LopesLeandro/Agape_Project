@@ -241,6 +241,9 @@ footer {
     transition: all .50s ease;
 }
 
+
+/* teste */
+
 .navbar a:hover{
     color: var(--hover-color);
 }
