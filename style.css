@@ -275,8 +275,8 @@ header{
 #carrousel{
     height: 100vh;
     display: flex;
-    margin-left: -15rem;
-    margin-right: -15rem;
+    /* margin-left: -15rem;
+    margin-right: -15rem; */
 }
 .slider{
     overflow: hidden;
