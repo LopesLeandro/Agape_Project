@@ -409,16 +409,16 @@ footer {
 /* ====== MAIN ========= */
 
 /* ========= FLEX START MAIN CONTENT ========= */
+
 .container{
-/* .container{
     display: flex;    
     width: 100vw;
     justify-content: center;
     align-items: center;
     margin: 0 0 0 0;
-} */
+}
 
-/* .box1{
+.box1{
     width: 70%;
     /* height: 100%; */
     /* display: block; */
@@ -468,7 +468,7 @@ main p {
 
 
 /* ========= TEXT FORMAT END ========= */
-} */
+
 
 @media (max-width: 1280px){
     header{
