@@ -10,10 +10,10 @@
 :root{
     --bg-color: #E7E8EC;
     --text-color: #fff;
+    --content-text-color: #181818;
     --main-color: #812828;
     --hover-color: #EAD24C;
     --none-color: #fff;
-    --content-text-color: #181818;
     font-size: 62.5%; /* 1rem = 10px | 1.2rem = 12px*/
     scroll-behavior: smooth;
 }
