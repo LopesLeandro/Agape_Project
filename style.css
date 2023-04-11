@@ -45,14 +45,35 @@ header{
 } */
 
 
+.container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin: 10%;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
 
-/* footer {
+.container-main h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#texto_sobre, #texto_noticias, #texto_contato { 
+    text-align: center;
+}
+
+
+footer {
 
     background-color: #812828;
     color: white;
     text-align: center;
     padding: 3em;
-    margin-top: 20em;
+    margin-top: 2em;
     margin-bottom: 0;
     bottom: 0;
     width: 100%;
@@ -64,9 +85,9 @@ header{
     flex-direction: column;
     color: rgb(255, 255, 255);
 
-} */
+}
 
-/* @media (min-width: 800px){
+@media (min-width: 1280px){
     .container-grid {  display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -98,7 +119,7 @@ header{
       .endereco_data { grid-area: endereco_data; }
       
       .instagram_data { grid-area: instagram_data; }
-}  */
+} 
 
  
 
