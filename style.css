@@ -42,12 +42,6 @@ header{
     transition: all .50s ease;
 }
 
-/* main {
-    margin-left: 15rem;
-    margin-right: 15rem;
-} */
-
-
 .container-main {
     display: flex;
     flex-direction: column;
@@ -61,12 +55,13 @@ header{
 .container-main h1 {
     font-size: 1.5em;
     font-weight: 600;
-    margin-bottom: 1em;
+    margin: 2rem 0 0.5rem 0;
+
     text-align: center;
 }
 
-#texto_sobre, #texto_noticias, #texto_contato { 
-    text-align: center;
+#texto_sobre, #texto_noticias, #texto_projetos, p { 
+    text-align: justify;
 }
 
 
@@ -410,23 +405,7 @@ footer {
 
 /* ====== MAIN ========= */
 
-/* .container{
-    display: flex;    
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 0 0;
-} */
 
-/* .box1{
-    width: 70%;
-    height: 100%;
-    display: block;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 0 0;
-} */
 
 @media (max-width: 1280px){
     header{
