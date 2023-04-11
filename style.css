@@ -13,6 +13,8 @@
     --content-text-color: #181818;
     /* zzz */
     /* MODIFICAR */
+    /* kh */
+    /* caralho */
     --main-color: #812828;
     --hover-color: #EAD24C;
     --none-color: #fff;
@@ -245,9 +247,11 @@ footer {
     margin: 0 30px;
     transition: all .50s ease;
 }
+/* aniaml */
 
 
-/* ANIMAL */
+
+/* teste p teste */
 
 .navbar a:hover{
     color: var(--hover-color);
