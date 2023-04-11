@@ -6,6 +6,9 @@ menu.onclick = () =>{
     navbar.classList.toggle('open');
     }
 
+
+
+
 // Fetch the text file
 fetch('Website_text/sobre.txt')
                 .then(response => response.text())

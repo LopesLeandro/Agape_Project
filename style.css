@@ -22,9 +22,7 @@ body{
     min-height: 100vh;
     background: var(--bg-color);
     color: var(--text-color);
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    font-size: 1.5rem;
 }
 
 header{
@@ -42,27 +40,42 @@ header{
     transition: all .50s ease;
 }
 
-menu {
-    width: 100%;
-    height: 100vh;
+/* main {
+    margin-left: 15rem;
+    margin-right: 15rem;
+} */
+
+
+.container-main {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
     color: black;
+    margin: 10%;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.container-main h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#texto_sobre, #texto_noticias, #texto_contato { 
+    text-align: center;
 }
 
 
-/* footer {
+footer {
 
     background-color: #812828;
     color: white;
     text-align: center;
     padding: 3em;
-    margin-top: 20em;
+    margin-top: 2em;
     margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
     bottom: 0;
     width: 100%;
     height: 10%;
@@ -73,14 +86,14 @@ menu {
     flex-direction: column;
     color: rgb(255, 255, 255);
 
-} */
+}
 
-/* @media (min-width: 800px){
+@media (min-width: 1280px){
     .container-grid {  display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 0px 0px;
-        grid-auto-flow: row;
+        grid-auto-flow: row;     
         grid-template-areas:
           "info cnpj email telefone endereco instagram"
           "info cnpj_data email_data telefone_data endereco_data instagram_data";
@@ -107,7 +120,7 @@ menu {
       .endereco_data { grid-area: endereco_data; }
       
       .instagram_data { grid-area: instagram_data; }
-} */
+} 
 
  
 
@@ -147,19 +160,19 @@ menu {
 
 
 /*PROJETOS INSTITUTO CONFIG*/
-/* 
-.projetos_instituto{
+
+/* .projetos_instituto{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 20%;
     margin-bottom: 10%;
-    /*text-align: center;*/
-    /* color: black; */
+    text-align: center;
+    color: black;
     
-/* } */
+}
 
-/* .projetos_instituto p{
+.projetos_instituto p{
     position: inline-block;
     height: 70px;
     padding: 9px;
@@ -278,9 +291,11 @@ menu {
 }
 
 /* CARROUSEL START CONFIG */
-.carrousel{
+#carrousel{
     height: 100vh;
     display: flex;
+    /* margin-left: -15rem;
+    margin-right: -15rem; */
 }
 .slider{
     overflow: hidden;
@@ -395,14 +410,15 @@ menu {
 
 /* ========= FLEX START MAIN CONTENT ========= */
 .container{
+/* .container{
     display: flex;    
     width: 100vw;
     justify-content: center;
     align-items: center;
     margin: 0 0 0 0;
-}
+} */
 
-.box1{
+/* .box1{
     width: 70%;
     /* height: 100%; */
     /* display: block; */
@@ -452,6 +468,7 @@ main p {
 
 
 /* ========= TEXT FORMAT END ========= */
+} */
 
 @media (max-width: 1280px){
     header{
@@ -473,7 +490,7 @@ main p {
         top: 100%;
         right: -100%;
         width: 270px;
-        /* height: 29vh; */
+        height: 29vh;
         padding: 0 0 10px 0;
         background: var(--main-color);
         display: flex;
@@ -504,10 +521,57 @@ main p {
 }
 
 @media (max-width: 900px){
-    .carrousel{
+    #carrousel{
         max-height: 500px;
     }
     .slide img{
         max-height: 500px;
     }
 }
+
+
+/* @media (min-width: 1024px){
+    .container-main {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content 20vw 30vw 20vw;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "carrosel carrosel"
+          "sobre sobre"
+          "projetos foto"
+          "noticias noticias";
+          
+        
+      }
+      
+      .carrosel { grid-area: carrosel; }
+      
+      .sobre {
+        grid-area: sobre; 
+        margin-top: -5em;}
+      
+      .projetos {
+        grid-area: projetos;
+        margin: -10em;
+     }
+      
+      .noticias {
+        grid-area: noticias;
+        margin: -10em;
+     }
+
+      .foto-body {
+        grid-area: foto;
+        margin: 10em;
+    }
+    
+
+} */
+
+
+/* .foto-body {
+
+    text-align: center  ;
+} */

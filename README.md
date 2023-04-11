@@ -6,8 +6,8 @@
 
 ## 2. Dev Team
 * [Leandro Lopes](https://github.com/LopesLeandro/)
-* [Luan Gomes Silva](https://github.com/Luan2002/Luan2002)
 * [Pedro Eccel Zimmermann](https://github.com/PedroZimmer)
-* [Rodrigo Worlitz](https://none)
-* [Yduan Recheffting](https://none)
 
+
+## 3. Prototype
+[Here](https://lopesleandro.github.io/Agape_Project/) is presented a prototype of a website that boasts an intuitive and user-friendly interface, featuring a modern and responsive design suitable for diverse devices.
