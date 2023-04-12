@@ -1,6 +1,6 @@
 
 
-<h2>Eventos futuros</h2>
+<h3>Eventos futuros</h3>
 <p>Fique atento aos eventos que estão por vir e participe conosco!</p>
 <ul>
     <li>Campanha do agasalho 2023</li>
