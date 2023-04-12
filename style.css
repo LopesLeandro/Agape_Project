@@ -55,10 +55,51 @@ header{
     margin-bottom: 2em;
 }
 
+.bsc-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    /* height: 17rem; */
+    margin: -50px 0 3rem 0;
+    /* max-width: 1920px; */
+    
+}
+
+.missao, .visao, .valores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    /* width: 30%; */
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.missao {
+    background-color: var(--hover-color);
+    
+}
+
+.visao {
+    background-color: var(--main-color);
+    
+}
+
+.valores {
+    background-color: rgb(32, 32, 172);
+    
+}
+
 main h1 {
     font-size: 1.5em;
     font-weight: 600;
-    margin: 2rem 0 0.5rem 0;
+    /* margin: 2rem 0 0.5rem 0; */
     text-align: left;
 }
 
@@ -297,11 +338,10 @@ footer {
 
 /* CARROUSEL START CONFIG */
 #carrousel{
-    height: 100vh;
+    height: 90vh;
     display: flex;
-    /* margin-left: -15rem;
-    margin-right: -15rem; */
 }
+
 .slider{
     overflow: hidden;
     
@@ -472,6 +512,12 @@ footer {
     .slide img{
         max-height: 500px;
     }
+    .bsc-box {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    
 }
 
 
