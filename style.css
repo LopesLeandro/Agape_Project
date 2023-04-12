@@ -129,6 +129,15 @@ footer {
 
 }
 
+footer div {
+    margin: 5px;
+}
+
+footer div p {
+    text-align: center;
+}
+
+
 @media (min-width: 1280px){
     .container-grid {  display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -161,6 +170,10 @@ footer {
       .endereco_data { grid-area: endereco_data; }
       
       .instagram_data { grid-area: instagram_data; }
+
+    .container-grid div p {
+        text-align: center;
+    }
 } 
 
  
