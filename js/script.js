@@ -36,6 +36,26 @@ fetch('Website_text/Contato.txt')
                     document.getElementById('texto_contato').innerHTML = text;
                 });
 
+// Fetch the text file
+fetch('Website_text/missao.txt')
+                .then(response => response.text())
+                .then(text => {
+                    document.getElementById('texto_missao').innerHTML = text;
+                });
+
+// Fetch the text file
+fetch('Website_text/visao.txt')
+                .then(response => response.text())
+                .then(text => {
+                    document.getElementById('texto_visao').innerHTML = text;
+                });
+
+// Fetch the text file
+fetch('Website_text/valores.txt')
+                .then(response => response.text())
+                .then(text => {
+                    document.getElementById('texto_valores').innerHTML = text;
+                });
 
 // Carrousel AUTO-NAVIGATION
 var counter = 1;

@@ -390,16 +390,16 @@ footer div p {
 }
 
 /*MANUAL NAVIGATION*/
-.navigation-manual{
+/* .navigation-manual{
     position: absolute;
     width: 100vw;
-    margin-top: -40px;
+    margin-top: -100px;
     display: flex;
     justify-content: center;
 }
 
 .manual-btn{
-    /* border: 2px solid var(--main-color); */
+    border: 2px solid var(--main-color);
     background: #812828;
     padding: 3px;
     border-radius: 10px;
@@ -429,10 +429,10 @@ footer div p {
 
 #radio4:checked ~ .first{
     margin-left: -60%;
-}
+} */
 
 /*AUTOMATIC NAVIGATION*/
-.navigation-auto{
+/* .navigation-auto{
     position: absolute;
     display: flex;
     width: 100vw;
@@ -467,7 +467,7 @@ footer div p {
 
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background: var(--main-color);
-}
+} */
 
 
 /* ====== MAIN ========= */
@@ -494,7 +494,7 @@ footer div p {
         top: 100%;
         right: -100%;
         width: 270px;
-        height: 29vh;
+        /* height: 29vh; */ /*Remove ou adiciona a margem automática. Atual: Desativado*/
         padding: 0 0 10px 0;
         background: var(--main-color);
         display: flex;
