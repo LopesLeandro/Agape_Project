@@ -176,7 +176,13 @@ footer div p {
     }
 } 
 
- 
+.instagram_data a {
+    color: rgb(255, 255, 255);
+}
+
+.instagram_data a:hover {
+    color: rgb(180, 180, 180);
+}
 
 .logo{
     display: flex;
