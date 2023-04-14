@@ -62,12 +62,40 @@ header{
     flex-wrap: wrap;
     position: absolute;
     width: 50vw;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* ISSO AQUI N SE APLICA, VAGABUNDO */
     margin: 15% 0 0 5%;
     padding: 5%;
     background-color: var(--background-transparency);
     
 }
+
+@media (max-width: 1280px){
+    .mensagem{
+        margin-top: 5em;
+        margin: 15% 0 0 5%;
+
+        
+    }
+
+    .mensagem h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 400px){
+    .mensagem{
+        margin-top: 5em;
+        margin: 25% 0 0 5%;
+        width: 80vw;
+        font-size: 1.5rem;
+    }
+
+    .mensagem h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
 
 .bsc-box {
     display: flex;
@@ -97,17 +125,27 @@ header{
 
 .missao {
     background-color: var(--hover-color);
+    /* background-color: rgb(44, 90, 44); */
+    /* background-color: #dbc858; */
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
     
 }
 
 .visao {
     background-color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
     
 }
 
 .valores {
-    background-color: rgb(32, 32, 172);
-    
+    background-color: rgb(39, 39, 114);
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
 }
 
 main h1 {
