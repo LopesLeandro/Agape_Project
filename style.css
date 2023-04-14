@@ -62,12 +62,40 @@ header{
     flex-wrap: wrap;
     position: absolute;
     width: 50vw;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* ISSO AQUI N SE APLICA, VAGABUNDO */
     margin: 15% 0 0 5%;
     padding: 5%;
     background-color: var(--background-transparency);
     
 }
+
+@media (max-width: 1280px){
+    .mensagem{
+        margin-top: 5em;
+        margin: 15% 0 0 5%;
+
+        
+    }
+
+    .mensagem h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 400px){
+    .mensagem{
+        margin-top: 5em;
+        margin: 25% 0 0 5%;
+        width: 80vw;
+        font-size: 1.5rem;
+    }
+
+    .mensagem h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
 
 .bsc-box {
     display: flex;
@@ -76,14 +104,20 @@ header{
     justify-content: center;
     width: 100vw;
     /* height: 17rem; */
-    margin: -50px 0 3rem 0;
+    /* margin: 10px 0 3rem 0; */
     /* max-width: 1920px; */
+    height: 15vw;
     
 }
 
+.bsc-box div {
+    margin-top: -50px;
+}
+
+
 .missao, .visao, .valores {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px;
@@ -97,17 +131,27 @@ header{
 
 .missao {
     background-color: var(--hover-color);
+    /* background-color: rgb(44, 90, 44); */
+    /* background-color: #dbc858; */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     
 }
 
 .visao {
     background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     
 }
 
 .valores {
-    background-color: rgb(32, 32, 172);
-    
+    background-color: rgb(39, 39, 114);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 main h1 {
@@ -211,87 +255,6 @@ footer div p {
     margin-right: 10px;
 }
 
-/*SOBRE O INSTITUTO CONFIG*/
-
-/* .sobre_instituto{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 20%;
-    margin-bottom: 10%;
-    text-align: center;
-    color: black;
-    
-}
-
-.sobre_instituto p{
-    position: inline-block;
-    height: 70px;
-    padding: 9px;
-    
-} */
-
-
-
-/*PROJETOS INSTITUTO CONFIG*/
-
-/* .projetos_instituto{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 20%;
-    margin-bottom: 10%;
-    text-align: center;
-    color: black;
-    
-}
-
-.projetos_instituto p{
-    position: inline-block;
-    height: 70px;
-    padding: 9px;
-    
-} */
-
-/*NOTICIAS INSTITUTO CONFIG*/
-/* .noticias_instituto{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 20%;
-    margin-bottom: 10%;
-    /*text-align: center;*/
-    /* color: black; */
-    
-/* } 
-
-.noticias_instituto p{
-    position: inline-block;
-    height: 70px;
-    padding: 9px;
-    
-} */ 
-
-/*CONTATO INSTITUTO CONFIG*/
-/* .contato_instituto{
-    display: flex;
-    align-items: center;
-    
-    justify-content: space-between;
-    align-items: center;
-     */
-    /*text-align: center;*/
-    /* color: rgb(255, 255, 255);
-    
-}
-
-.contato_instituto p{
-    position: inline-block;
-    height: 70px;
-    padding: 9px;
-    
-} */
-
 
 .logo i{
     color: var(--text-color);
@@ -317,11 +280,6 @@ footer div p {
     margin: 0 30px;
     transition: all .50s ease;
 }
-/* aniaml */
-
-
-
-/* teste p teste */
 
 .navbar a:hover{
     color: var(--hover-color);
@@ -383,6 +341,7 @@ footer div p {
 .slides{
     width: 500%;
     display: flex;
+    transition: 5s;
 }
 
 .slides input{
@@ -396,6 +355,7 @@ footer div p {
 
 .slide img{
     margin: 0;
+    margin-top: 60px;
     width: 100vw;
     /* min-width: 500px; */
     height: 100vh;
@@ -404,10 +364,10 @@ footer div p {
 }
 
 /*MANUAL NAVIGATION*/
-/* .navigation-manual{
+.navigation-manual{
     position: absolute;
     width: 100vw;
-    margin-top: -100px;
+    margin-top: -180px;
     display: flex;
     justify-content: center;
 }
@@ -443,10 +403,10 @@ footer div p {
 
 #radio4:checked ~ .first{
     margin-left: -60%;
-} */
+}
 
 /*AUTOMATIC NAVIGATION*/
-/* .navigation-auto{
+.navigation-auto{
     position: absolute;
     display: flex;
     width: 100vw;
@@ -481,7 +441,7 @@ footer div p {
 
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background: var(--main-color);
-} */
+}
 
 
 /* ====== MAIN ========= */
@@ -548,54 +508,13 @@ footer div p {
     .bsc-box {
         flex-flow: column wrap;
         align-items: center;
+        height: 100%;
+        
+    }
+
+    .bsc-box div {
+        margin: 0;
     }
 
     
 }
-
-
-/* @media (min-width: 1024px){
-    .container-main {  
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: max-content 20vw 30vw 20vw;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "carrosel carrosel"
-          "sobre sobre"
-          "projetos foto"
-          "noticias noticias";
-          
-        
-      }
-      
-      .carrosel { grid-area: carrosel; }
-      
-      .sobre {
-        grid-area: sobre; 
-        margin-top: -5em;}
-      
-      .projetos {
-        grid-area: projetos;
-        margin: -10em;
-     }
-      
-      .noticias {
-        grid-area: noticias;
-        margin: -10em;
-     }
-
-      .foto-body {
-        grid-area: foto;
-        margin: 10em;
-    }
-    
-
-} */
-
-
-/* .foto-body {
-
-    text-align: center  ;
-} */
