@@ -1,0 +1,74 @@
+:root{
+    --bg-color: #E7E8EC;
+    --text-color: #fff;
+    --content-text-color: #181818;
+    --background-transparency: rgba(24, 24, 24, 0.831);
+    --main-color: #812828;
+    --hover-color: #EAD24C;
+    --none-color: #fff;
+    font-size: 62.5%; /* 1rem = 10px | 1.2rem = 12px*/
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;
+}
+  
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login {
+    position: relative;
+    z-index: 1;
+    width: 400px; /* ajuste a largura da div conforme necessário */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 500px;
+    justify-content:center;
+    border-radius: 30px;
+    
+
+}
+
+.login div {
+    margin: 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.login form{
+    text-align: center;
+}
+
+.login form input[type="submit"] {
+    margin-top: 10px; /* Adicione essa margem para separar o botão do restante do formulário */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Assets/carrousel/imagem-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+
+.logo img {
+    margin-top: -40px;
+    width: 100px;
+}
