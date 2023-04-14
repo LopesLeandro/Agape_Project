@@ -11,6 +11,7 @@
     --bg-color: #E7E8EC;
     --text-color: #fff;
     --content-text-color: #181818;
+    --background-transparency: rgba(24, 24, 24, 0.831);
     --main-color: #812828;
     --hover-color: #EAD24C;
     --none-color: #fff;
@@ -53,6 +54,19 @@ header{
     width: 70%;
     max-width: 1920px;
     margin-bottom: 2em;
+}
+
+.mensagem{
+    display: inline-block;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    position: absolute;
+    width: 50vw;
+    font-size: 1.5rem;
+    margin: 15% 0 0 5%;
+    padding: 5%;
+    background-color: var(--background-transparency);
+    
 }
 
 .bsc-box {

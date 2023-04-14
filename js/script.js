@@ -57,6 +57,13 @@ fetch('Website_text/valores.txt')
                     document.getElementById('texto_valores').innerHTML = text;
                 });
 
+// Fetch the text file
+fetch('Website_text/mensagem.txt')
+                .then(response => response.text())
+                .then(text => {
+                    document.getElementById('texto_mensagem').innerHTML = text;
+                });
+
 // Carrousel AUTO-NAVIGATION
 var counter = 1;
 setInterval(function(){
