@@ -499,7 +499,7 @@ footer div p {
     }
 }
 
-@media (max-width: 1090px){
+@media (max-width: 550px){
     #menu-icon{
         display: inline-block;
     }
