@@ -44,17 +44,17 @@ fetch('Website_text/missao.txt')
                 });
 
 // Fetch the text file
-fetch('Website_text/visao.txt')
+fetch('Website_text/princ_eventos.txt')
                 .then(response => response.text())
                 .then(text => {
-                    document.getElementById('texto_visao').innerHTML = text;
+                    document.getElementById('texto_princ_eventos').innerHTML = text;
                 });
 
 // Fetch the text file
-fetch('Website_text/valores.txt')
+fetch('Website_text/doe.txt')
                 .then(response => response.text())
                 .then(text => {
-                    document.getElementById('texto_valores').innerHTML = text;
+                    document.getElementById('texto_doe').innerHTML = text;
                 });
 
 // Fetch the text file

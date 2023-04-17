@@ -106,7 +106,7 @@ header{
     /* height: 17rem; */
     /* margin: 10px 0 3rem 0; */
     /* max-width: 1920px; */
-    height: 15vw;
+    height: 10vw;
     
 }
 
@@ -115,7 +115,7 @@ header{
 }
 
 
-.missao, .visao, .valores {
+.missao, .princ_eventos, .doe {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,7 +139,7 @@ header{
     
 }
 
-.visao {
+.princ_eventos {
     /* background-color: var(--hover-color); */
     background-color: rgb(39, 39, 114);
 
@@ -149,7 +149,7 @@ header{
     
 }
 
-.valores {
+.doe {
     /* background-color: rgb(39, 39, 114); */
     background-color: var(--hover-color);
 
@@ -296,6 +296,7 @@ footer div p {
 .menu{
     display: flex;
     align-items: center;
+    
 }
 
 .menu a{
@@ -333,7 +334,7 @@ footer div p {
 
 /* CARROUSEL START CONFIG */
 #carrousel{
-    height: 90vh;
+    height: 85vh;
     display: flex;
 }
 
@@ -368,24 +369,24 @@ footer div p {
 }
 
 /*MANUAL NAVIGATION*/
-.navigation-manual{
+/* .navigation-manual{
     position: absolute;
     width: 100vw;
     margin-top: -180px;
     display: flex;
     justify-content: center;
-}
+} */
 
-.manual-btn{
+/* .manual-btn{
     border: 2px solid var(--main-color);
     background: #812828;
     padding: 3px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
-}
+} */
 
-.manual-btn:not(:last-child){
+/* .manual-btn:not(:last-child){
     margin-right: 15px;
 }
 
@@ -407,7 +408,7 @@ footer div p {
 
 #radio4:checked ~ .first{
     margin-left: -60%;
-}
+} */
 
 /*AUTOMATIC NAVIGATION*/
 .navigation-auto{
