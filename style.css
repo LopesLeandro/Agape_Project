@@ -106,7 +106,7 @@ header{
     /* height: 17rem; */
     /* margin: 10px 0 3rem 0; */
     /* max-width: 1920px; */
-    height: 10vw;
+    height: 115px;
     
 }
 
@@ -130,9 +130,10 @@ header{
 
 
 .missao {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
+    /* background-image: linear-gradient(180deg, #812828, var(--background-transparency)); */
     /* background-color: rgb(44, 90, 44); */
-    /* background-color: #dbc858; */
+    background-color: #812828;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -334,7 +335,7 @@ footer div p {
 
 /* CARROUSEL START CONFIG */
 #carrousel{
-    height: 85vh;
+    height: 91vh;
     display: flex;
 }
 
@@ -375,9 +376,9 @@ footer div p {
     margin-top: -180px;
     display: flex;
     justify-content: center;
-} */
+}
 
-/* .manual-btn{
+.manual-btn{
     border: 2px solid var(--main-color);
     background: #812828;
     padding: 3px;
@@ -386,7 +387,7 @@ footer div p {
     transition: 1s;
 } */
 
-/* .manual-btn:not(:last-child){
+.manual-btn:not(:last-child){
     margin-right: 15px;
 }
 
@@ -408,7 +409,7 @@ footer div p {
 
 #radio4:checked ~ .first{
     margin-left: -60%;
-} */
+}
 
 /*AUTOMATIC NAVIGATION*/
 .navigation-auto{
