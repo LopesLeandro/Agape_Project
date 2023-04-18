@@ -406,9 +406,17 @@ footer div p {
 /* .navigation-manual{
     position: absolute;
     width: 100vw;
-    margin-top: -180px;
+    margin-top: -210px;
     display: flex;
     justify-content: center;
+}
+
+
+@media (max-width: 900px){
+    .navigation-manual{
+        margin-top: -100px;
+        
+    }
 }
 
 .manual-btn{
