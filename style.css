@@ -71,66 +71,47 @@ header{
     transition: all .50s ease;
 }
 
-.logo{
+/* header .logo{
     display: flex;
     align-items: center;
     margin-right: 10px;
+} */
+
+header .logo img{
+    height: 5rem;
 }
 
-.logo img{
-    position: inline-block;
-    height: 50px;
-    padding: 5px;
-    margin-right: 10px;
-}
-
-
-.logo i{
-    color: var(--text-color);
-    font-size: 28px;
-    margin-right: 3px;
-}
-
-.logo span{
-    color: var(--text-color);
-    font-size: 1.6rem;
-    font-weight: 600;
-}
-
-.navbar{
+header .navbar{
     display: flex;
 }
 
-.navbar a{
+header .navbar a{
+    font-size: 1.5rem;
     color: var(--text-color);
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 5px 0;
-    margin: 0 30px;
-    transition: all .50s ease;
+    margin: 0 3rem;
+    /* transition: all .50s ease; */
 }
 
-.navbar a:hover{
+header .navbar a:hover{
     color: var(--hover-color);
 }
 
-.navbar a.active{
+/* header .navbar a.active{
     color: var(--hover-color);
-}
+} */
 
-.menu{
+/* .menu{
     display: flex;
     align-items: center;
     
-}
+}*/
 
 .menu a{
-    margin-right: 25px;
-    margin-left: 10px;
+    cursor: pointer;
+    padding: .5rem 1rem;
     color: var(--text-color);
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all .50s ease;
+    font-size: 1.5rem;
+    /* transition: all .50s ease; */
 }
 
 .user{
@@ -140,8 +121,8 @@ header{
 
 .user i{
     color: var(--text-color);
-    font-size: 28px;
-    margin-right: 7px;
+    font-size: 3rem;
+    margin-right: 1rem;
 }
 
 .menu a:hover{
@@ -149,11 +130,19 @@ header{
 }
 
 #menu-icon{
-    /* font-size: 35px; */
-    font-size: 3.5rem;
-    color: var(--text-color);
     cursor: pointer;
-    z-index: 10001;
+    padding: .5rem 1rem;
+    /* border: .2rem solid rgba(0,0,0,.2); */
+    /* margin-right: 25px;
+    margin-left: 10px; */
+    color: var(--text-color);
+    font-size: 3rem;
+    border-radius: .5rem;
+    /* font-size: 35px; */
+    /* font-size: 3.5rem; */
+    /* color: var(--text-color); */
+    /* cursor: pointer; */
+    /* z-index: 10001; */
     display: none;
 }
 
@@ -186,31 +175,6 @@ header{
     
 }
 
-@media (max-width: 1280px){
-    .mensagem{
-        margin-top: 5em;
-        margin: 15% 0 0 5%;
-
-        
-    }
-
-    .mensagem h1 {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 400px){
-    .mensagem{
-        margin-top: 5em;
-        margin: 25% 0 0 5%;
-        width: 80vw;
-        font-size: 1.5rem;
-    }
-
-    .mensagem h1 {
-        font-size: 2.5rem;
-    }
-}
 
 
 
@@ -491,22 +455,66 @@ footer div p {
 }
 
 
-/* ====== MAIN ========= */
+/* ====== Media Querys ========= */
 
 
 
-@media (max-width: 1280px){
-    header{
-        padding: 14px 2%;
-        transition: .2s;
+
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+
     }
-    .navbar a{
+    /* .navbar a{
         padding: 5px 0;
         margin: 0 20px;
+    } */
+}
+
+@media (max-width: 788px){
+    
+    .menu {
+        display: block;
+    }
+
+    header {
+        padding: 2rem 3%;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--main-color);
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 1rem 0;
+        padding: 1rem 0;
+        font-size: 2.5rem;
     }
 }
 
-@media (max-width: 550px){
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .menu a {
+        display: none;
+    }
+    #menu-icon{
+        display: block;
+    }
+
+}
+/* @media (max-width: 550px){
     #menu-icon{
         display: inline-block;
     }
@@ -515,7 +523,6 @@ footer div p {
         top: 100%;
         right: -100%;
         width: 270px;
-        /* height: 29vh; */ /*Remove ou adiciona a margem automática. Atual: Desativado*/
         padding: 0 0 10px 0;
         background: var(--main-color);
         display: flex;
@@ -533,7 +540,6 @@ footer div p {
     }
     .navbar a:hover{
         color: var(--hover-color);
-        /* transform: translateY(2px); */
         transform: translateX(3px);
     }
     .navbar a.active{
@@ -543,7 +549,7 @@ footer div p {
         right: 2%;
 
     }
-}
+} */
 
 @media (max-width: 900px){
     #carrousel{
@@ -564,4 +570,30 @@ footer div p {
     }
 
     
+}
+
+@media (max-width: 1280px){
+    .mensagem{
+        margin-top: 5em;
+        margin: 15% 0 0 5%;
+
+        
+    }
+
+    .mensagem h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 400px){
+    .mensagem{
+        margin-top: 5em;
+        margin: 25% 0 0 5%;
+        width: 80vw;
+        font-size: 1.5rem;
+    }
+
+    .mensagem h1 {
+        font-size: 2.5rem;
+    }
 }
