@@ -497,6 +497,7 @@ footer div p {
         padding: 1rem 0;
         font-size: 2.5rem;
     }
+    
 }
 
 @media (max-width: 500px){
@@ -511,6 +512,22 @@ footer div p {
     }
     #menu-icon{
         display: block;
+    }
+    #carrousel{
+        max-height: 500px;
+    }
+    .slide img{
+        max-height: 500px;
+    }
+    .bsc-box {
+        flex-flow: column wrap;
+        align-items: center;
+        height: 100%;
+        
+    }
+
+    .bsc-box div {
+        margin: 0;
     }
 
 }
@@ -552,22 +569,7 @@ footer div p {
 } */
 
 @media (max-width: 900px){
-    #carrousel{
-        max-height: 500px;
-    }
-    .slide img{
-        max-height: 500px;
-    }
-    .bsc-box {
-        flex-flow: column wrap;
-        align-items: center;
-        height: 100%;
-        
-    }
 
-    .bsc-box div {
-        margin: 0;
-    }
 
     
 }
