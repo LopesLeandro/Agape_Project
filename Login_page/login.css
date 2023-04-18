@@ -72,3 +72,14 @@ main {
     margin-top: -40px;
     width: 100px;
 }
+
+#login-button {
+    background-color: var(--hover-color);
+    color: var(--main-color);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
