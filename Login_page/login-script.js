@@ -15,3 +15,9 @@ usernameInput.addEventListener("input", function() {
 passwordInput.addEventListener("input", function() {
   loginButton.disabled = !isFormValid();
 });
+
+
+
+function voltar() {
+    window.history.back();
+  }

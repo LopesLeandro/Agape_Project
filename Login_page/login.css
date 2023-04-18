@@ -83,3 +83,19 @@ main {
     cursor: pointer;
     transition: 0.5s;
 }
+
+#voltar-menu {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--hover-color);
+    color: var(--main-color);
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+
+
+}
