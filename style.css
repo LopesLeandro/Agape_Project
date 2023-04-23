@@ -489,6 +489,18 @@ footer div p {
         background: var(--main-color);
         text-align: center;
         padding: 2rem 0;
+        border-top: .1rem solid #581a1a;
+        transform: scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+
+        
+    }
+
+    .navbar.nav-toggle{
+        transform: scaleY(1);
+        opacity: 1;
+
     }
 
     .navbar a {

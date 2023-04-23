@@ -1,12 +1,14 @@
-let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+// Injeta o menu toggle hamburguer em telas pequenas
+document.getElementById("menu-icon").addEventListener("click", function() {
+    document.querySelector(".navbar").classList.toggle("nav-toggle");
+  });
 
-menu.onclick = () =>{
-    menu.classList.toggle('bx-x');
-    navbar.classList.toggle('open');
-    }
-
-
+// Garante que remova o submenu hamburguer quando a tela for maior
+document.querySelectorAll(".navbar a").forEach(function(anchor) {
+    anchor.addEventListener("click", function() {
+      document.querySelector(".navbar").classList.remove("nav-toggle");
+    });
+  });
 
 
 // Fetch the text file
