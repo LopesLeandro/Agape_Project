@@ -265,45 +265,6 @@ footer div p {
     text-align: center;
 }
 
-
-@media (min-width: 1280px){
-    .container-grid {  display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;     
-        grid-template-areas:
-          "info cnpj email telefone endereco instagram"
-          "info cnpj_data email_data telefone_data endereco_data instagram_data";
-      }
-      
-      .cnpj { grid-area: cnpj; }
-      
-      .email { grid-area: email; }
-      
-      .telefone { grid-area: telefone; }
-      
-      .endereco { grid-area: endereco; }
-      
-      .instagram { grid-area: instagram; }
-      
-      .info { grid-area: info; }
-      
-      .cnpj_data { grid-area: cnpj_data; }
-      
-      .email_data { grid-area: email_data; }
-      
-      .telefone_data { grid-area: telefone_data; }
-      
-      .endereco_data { grid-area: endereco_data; }
-      
-      .instagram_data { grid-area: instagram_data; }
-
-    .container-grid div p {
-        text-align: center;
-    }
-} 
-
 .instagram_data a {
     color: rgb(255, 255, 255);
 }
@@ -691,3 +652,41 @@ footer div p {
         font-size: 70%;
     }
 }
+
+@media (min-width: 1280px){
+    .container-grid {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;     
+        grid-template-areas:
+          "info cnpj email telefone endereco instagram"
+          "info cnpj_data email_data telefone_data endereco_data instagram_data";
+      }
+      
+      .cnpj { grid-area: cnpj; }
+      
+      .email { grid-area: email; }
+      
+      .telefone { grid-area: telefone; }
+      
+      .endereco { grid-area: endereco; }
+      
+      .instagram { grid-area: instagram; }
+      
+      .info { grid-area: info; }
+      
+      .cnpj_data { grid-area: cnpj_data; }
+      
+      .email_data { grid-area: email_data; }
+      
+      .telefone_data { grid-area: telefone_data; }
+      
+      .endereco_data { grid-area: endereco_data; }
+      
+      .instagram_data { grid-area: instagram_data; }
+
+    .container-grid div p {
+        text-align: center;
+    }
+} 
