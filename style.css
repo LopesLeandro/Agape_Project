@@ -126,10 +126,15 @@ header .navbar a:hover{
     height: 100vh;
     overflow: hidden;
     display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100vw + 1rem); /* Tive que add esse -1rem para o scroll não aparecer e não arrebentar o layout na ponta esquerda */
 }
 
 .slider{
     overflow: hidden;
+    margin-right: -1rem; /* Tive que add esse -1rem para o scroll não aparecer e não arrebentar o layout na ponta esquerda */
     
 }
 
@@ -150,7 +155,7 @@ header .navbar a:hover{
 
 .slide img{
     width: 100vw;
-    height: auto; /* Aparentemente melhor que 100vh para outros monitores, saca*/
+    height: 100vh; /* Aparentemente melhor que 100vh para outros monitores, saca*/
     object-fit: cover;
     
 }
@@ -217,7 +222,7 @@ header .navbar a:hover{
     display: flex;
     width: 100vw;
     justify-content: center;
-    margin-top: 47.4vh;
+    /* margin-top: 47.4vh; */
     display: none;
     
 }
