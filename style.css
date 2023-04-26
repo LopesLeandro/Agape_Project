@@ -216,43 +216,7 @@ header .navbar a:hover{
     margin-left: -300%;
 }
 
-/*AUTOMATIC NAVIGATION*/
-.navigation-auto{
-    position: absolute;
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    /* margin-top: 47.4vh; */
-    display: none;
-    
-}
 
-.navigation-auto div{
-    border: 2px solid var(--main-color);
-    padding: 5px;
-    transition: 1s;
-    border-radius: 10px;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background: var(--main-color);
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background: var(--main-color);
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background: var(--main-color);
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background: var(--main-color);
-}
 
 
 

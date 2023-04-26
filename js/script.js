@@ -66,12 +66,19 @@ fetch('Website_text/mensagem.txt')
                     document.getElementById('texto_mensagem').innerHTML = text;
                 });
 
-// Carrousel AUTO-NAVIGATION
+// Carrousel AUTO-NAVIGATION VAI E VEM AGORA
 var counter = 1;
-setInterval(function(){
+var direction = 1;
+
+setInterval(function () {
     document.getElementById('radio' + counter).checked = true;
-    counter++;
-    if(counter > 4){
+    counter += direction;
+
+    if (counter > 4) {
+        counter = 4;
+        direction = -1;
+    } else if (counter < 1) {
         counter = 1;
+        direction = 1;
     }
 }, 5000);
