@@ -34,6 +34,7 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
     font-size: 1.5rem;
+    padding-top: 60px;
 }
 
 html{
@@ -71,12 +72,6 @@ header{
     transition: all .50s ease;
 }
 
-/* header .logo{
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-} */
-
 header .logo img{
     height: 5rem;
 }
@@ -89,29 +84,17 @@ header .navbar a{
     font-size: 1.5rem;
     color: var(--text-color);
     margin: 0 3rem;
-    /* transition: all .50s ease; */
 }
 
 header .navbar a:hover{
     color: var(--hover-color);
 }
 
-/* header .navbar a.active{
-    color: var(--hover-color);
-} */
-
-/* .menu{
-    display: flex;
-    align-items: center;
-    
-}*/
-
 .menu a{
     cursor: pointer;
     padding: .5rem 1rem;
     color: var(--text-color);
     font-size: 1.5rem;
-    /* transition: all .50s ease; */
 }
 
 .user{
@@ -138,91 +121,150 @@ header .navbar a:hover{
     display: none;
 }
 
+/* CARROUSEL START CONFIG */
+.carrousel{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.slider{
+    overflow: hidden;
+    
+}
+
+.slides{
+    display: flex;
+    transition: 5s;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    transition: 2s;
+}
+
+.slide img{
+    width: 100vw;
+    height: auto; /* Aparentemente melhor que 100vh para outros monitores, saca*/
+    object-fit: cover;
+    
+}
+
+.container-msg {
+    position: absolute;
+    padding-top: 2vw;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.mensagem {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    position: absolute;
+    overflow-wrap: break-word;
+    
+}
+
+#texto_mensagem {
+    color: white;
+    margin: 0;
+    font-size: 2vw;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 15px;
+}
+
+.manual-btn:hover{
+    background: var(--main-color);
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -200%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -300%;
+}
+
+/*AUTOMATIC NAVIGATION*/
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 47.4vh;
+    display: none;
+    
+}
+
+.navigation-auto div{
+    border: 2px solid var(--main-color);
+    padding: 5px;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: var(--main-color);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: var(--main-color);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: var(--main-color);
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: var(--main-color);
+}
+
+
+
+
+
+
+/* main é daqui para baixo*/
 
 .container-main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 100vw; */
-}
-
-.box1, .box2, .box3 {
-    display: block;
-    color: var(--content-text-color);
-    width: 70%;
-    max-width: 1920px;
-    margin-bottom: 2em;
-}
-
-.mensagem{
-    display: inline-block;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    position: absolute;
-    width: 50vw;
-    padding: 5%;
-    background-color: var(--background-transparency);
-    top: 45%; left: 5%;
-    
-}
-
-.bsc-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 145px;
-}
-
-.bsc-box div {
-    margin-top: -100px;
 }
 
 
-.missao, .princ_eventos, .doe {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    font-size: 2rem;
-    
-}
 
 
-.missao {
-    /* background-color: var(--main-color); */
-    /* background-image: linear-gradient(180deg, #812828, var(--background-transparency)); */
-    /* background-color: rgb(44, 90, 44); */
-    background-color: #812828;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    
-}
-
-.princ_eventos {
-    /* background-color: var(--hover-color); */
-    background-color: rgb(39, 39, 114);
-
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    
-}
-
-.doe {
-    /* background-color: rgb(39, 39, 114); */
-    background-color: var(--hover-color);
-
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
 
 main h1 {
     font-size: 1.5em;
@@ -275,129 +317,7 @@ footer div p {
 
 
 
-/* CARROUSEL START CONFIG */
-#carrousel{
-    height: 91vh;
-    display: flex;
-}
 
-.slider{
-    overflow: hidden;
-    
-}
-
-.slides{
-    width: 500%;
-    display: flex;
-    transition: 5s;
-}
-
-.slides input{
-    display: none;
-}
-
-.slide{
-    width: 20%;
-    transition: 2s;
-}
-
-.slide img{
-    margin: 0;
-    margin-top: 60px;
-    width: 100vw;
-    /* min-width: 500px; */
-    height: 100vh;
-    object-fit: cover;
-    
-}
-
-/*MANUAL NAVIGATION*/
-/* .navigation-manual{
-    position: absolute;
-    width: 100vw;
-    margin-top: -210px;
-    display: flex;
-    justify-content: center;
-}
-
-
-@media (max-width: 900px){
-    .navigation-manual{
-        margin-top: -100px;
-        
-    }
-}
-
-.manual-btn{
-    border: 2px solid var(--main-color);
-    background: #812828;
-    padding: 3px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-} */
-
-.manual-btn:not(:last-child){
-    margin-right: 15px;
-}
-
-.manual-btn:hover{
-    background: var(--main-color);
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -20%;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -40%;
-}
-
-#radio4:checked ~ .first{
-    margin-left: -60%;
-}
-
-/*AUTOMATIC NAVIGATION*/
-.navigation-auto{
-    position: absolute;
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    margin-top: 47.4vh;
-    display: none;
-    
-}
-
-.navigation-auto div{
-    border: 2px solid var(--main-color);
-    padding: 5px;
-    transition: 1s;
-    border-radius: 10px;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background: var(--main-color);
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background: var(--main-color);
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background: var(--main-color);
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background: var(--main-color);
-}
 
 
 /* ====== Media Querys ========= */
@@ -409,23 +329,6 @@ footer div p {
     html{
         font-size: 55%;
 
-    }
-
-    .mensagem{
-        top: 25%; left: 2%;
-    }
-    .bsc-box {
-        height: 100px;
-    }
-    
-    .bsc-box div {
-        margin-top: -70px;
-    }
-    
-    
-    .missao, .princ_eventos, .doe {
-        padding: 20px;
-        font-size: 80%;
     }
 }
 
@@ -469,11 +372,6 @@ footer div p {
         font-size: 2.5rem;
     }
 
-    .mensagem{
-        top: 35%; left: 2%;
-        padding: 3%;
-    }
-
 }
 
 /* Tablets */
@@ -510,28 +408,6 @@ footer div p {
     #menu-icon{
         display: block;
     }
-    #carrousel{
-        max-height: 500px;
-    }
-    .slide img{
-        max-height: 500px;
-    }
-    .bsc-box {
-        flex-flow: column wrap;
-        align-items: center;
-        height: 100%;
-        
-    }
-
-    .bsc-box div {
-        margin: 0;
-        height: 80px;
-    }
-
-    .mensagem{
-        top: 15%;
-        padding: 3%;
-    }
 }
 
 /* Telas resolução pequena */
@@ -548,110 +424,8 @@ footer div p {
     #menu-icon{
         display: block;
     }
-    #carrousel{
-        max-height: 500px;
-    }
-    .slide img{
-        max-height: 500px;
-    }
-    .bsc-box {
-        flex-flow: column wrap;
-        align-items: center;
-        height: 100%;
-        
-    }
-
-    .bsc-box div {
-        margin: 0;
-        height: 80px;
-    }
-
-    .mensagem{
-        top: 15%;
-        padding: 3%;
-    }
 }
 
-
-@media (max-width: 1280px){
-    .mensagem{
-        margin-top: 5em;
-        margin: 15% 0 0 5%;
-
-        
-    }
-
-    .mensagem h1 {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 400px){
-    .mensagem{
-        margin-top: 5em;
-        margin: 25% 0 0 5%;
-        width: 80vw;
-        font-size: 1.5rem;
-    }
-
-    .mensagem h1 {
-        font-size: 2.5rem;
-    }
-}
-
-/* Controles de altura para as telas */
-@media (max-height: 500px){
-    .body {
-        height: 100vh;
-    }
-    .mensagem{
-        margin-top: 5em;
-        margin: 15% 0 0 5%;
-        width: 80vw;
-        font-size: 1.5rem;
-    }
-
-    .mensagem h1 {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-height: 768px){
-
-    .body {
-        height: 100vh;
-    }
-    .mensagem{
-        margin-top: 5em;
-        margin: 15% 0 0 5%;
-        width: 80vw;
-        font-size: 1.5rem;
-    }
-
-    .mensagem h1 {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-height: 900px){
-
-    .body {
-        height: 100vh;
-    }
-    .mensagem{
-        margin-top: 5em;
-        margin: 15% 0 0 5%;
-        width: 70vw;
-    }
-
-    .mensagem h1 {
-        font-size: 2rem;
-    }
-
-    .missao, .princ_eventos, .doe{
-        font-size: 70%;
-    }
-}
 
 @media (min-width: 1280px){
     .container-grid {  display: grid;
@@ -690,3 +464,19 @@ footer div p {
         text-align: center;
     }
 } 
+
+
+
+
+/* Media querie do texto sobre a imagem do slide */
+/* @media (max-width: 768px) {
+    .mensagem {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mensagem {
+        width: 95%;
+    }
+} */
