@@ -129,13 +129,11 @@ header .navbar a:hover{
     position: absolute;
     left: 0;
     top: 0;
-    width: calc(100vw + 1rem); /* Tive que add esse -1rem para o scroll não aparecer e não arrebentar o layout na ponta esquerda */
 }
 
 .slider{
     overflow: hidden;
-    margin-right: -1rem; /* Tive que add esse -1rem para o scroll não aparecer e não arrebentar o layout na ponta esquerda */
-    
+  
 }
 
 .slides{
@@ -155,7 +153,7 @@ header .navbar a:hover{
 
 .slide img{
     width: 100vw;
-    height: 100vh; /* Aparentemente melhor que 100vh para outros monitores, saca*/
+    height: 100vh;
     object-fit: cover;
     
 }
@@ -166,6 +164,7 @@ header .navbar a:hover{
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -175,6 +174,7 @@ header .navbar a:hover{
 .mensagem {
     background-color: rgba(0, 0, 0, 0.5);
     width: 60%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,7 +189,7 @@ header .navbar a:hover{
 #texto_mensagem {
     color: white;
     margin: 0;
-    font-size: 2vw;
+    font-size: 4rem;
 }
 
 .manual-btn:not(:last-child){
@@ -434,18 +434,65 @@ footer div p {
     }
 } 
 
-
-
-
-/* Media querie do texto sobre a imagem do slide */
-/* @media (max-width: 768px) {
+@media (max-width: 1280px){
     .mensagem {
-        width: 80%;
+        height: 30%;
+    }
+
+    #texto_mensagem {
+        font-size: 3.5rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 788px){
     .mensagem {
-        width: 95%;
+        height: 30%;
     }
-} */
+
+    #texto_mensagem {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 500px){
+    .mensagem {
+        height: 30%;
+    }
+
+    #texto_mensagem {
+        font-size: 2.5rem;
+    }
+}
+
+/* @media das alturas */
+@media (min-height: 500px){
+    .mensagem {
+        height: 30%;
+    }
+
+    #texto_mensagem {
+        font-size: 2rem;
+    }
+}
+
+@media (min-height: 788px){
+    .mensagem {
+        height: 40%;
+    }
+
+    #texto_mensagem {
+        font-size: 3rem;
+    }
+}
+
+@media (min-height: 850px){
+    .mensagem {
+        height: 20%;
+    }
+
+    #texto_mensagem {
+        font-size: 2.5rem;
+    }
+}
+
