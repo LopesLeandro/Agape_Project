@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link do tailwindCSS -->
+    <link href="../dist/output.css" rel="stylesheet">    
+    <!-- Link para o arquivo JavaScript:-->
+    <link rel="stylesheet" href="script.js" type="script">
+    <!-- Link para o arquivo Icon: RemixIcon Github-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Link para o arquivo Icon: BoxIcons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;600&display=swap" rel="stylesheet">
+    <!-- LINK PARA ICONE DO SITE-->
+    <link rel="shortcut icon" href="Assets/logo.png" type="image/x-icon">
+
+    <title>Somos Agape</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="Assets/logo.png" alt=""></a>
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#rodape">Contato</a></li>
+        </ul>
+
+        <div class="menu">
+            <a href="Login_page/login.html" class="user"><i class="ri-user-fill"></i>Área do Voluntário</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!--- CARROUSEL -->
+        <div id="carrousel" class="carrosel">
+            <!--- CARROUSEL -->
+            <!--Slide images start-->
+            <div class="slider">
+                <div class="slides">
+                    <!--Radio buttons start-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!--Radio buttons end-->
+                    <!--Slide images start-->
+                    <div class="slide first">
+                        <img src="../Assets/carrousel/imagem-1.JPG" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="../Assets/carrousel/imagem-2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="../Assets/carrousel/imagem-3.JPG" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="../Assets/carrousel/imagem-4.JPG" alt="">
+                    </div>
+                    <!--Slide images end-->
+
+                    <!-- Message container -->
+                    <div class="container-msg">
+                        <div class="mensagem">
+                            <h1 id="texto_mensagem"></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+
+        
+
+    <main class="container-main">
+
+
+
+        <!--- SOBRE O INSTITUTO -->
+        <div class="box1">
+            <section id="sobre" class="sobre">
+                <div class="sobre_instituto">
+                    <h1>Sobre</h1>
+                    <p id="texto_sobre"></p>
+                </div>
+            </section>
+        </div>
+
+        <!--- PROJETOS -->
+        <div class="box2">
+            <section id="projetos">
+                <div class="projetos_instituto">
+                    <h1>Projetos</h1>
+                    <p id="texto_projetos"></p>
+                </div>
+            </section>
+        </div>
+
+
+        <!--- NOTÍCIAS -->
+        <div class="box3">
+            <section id="noticias">
+                <div class="noticias_instituto">
+                    <h1>Notícias</h1>
+                    <p id="texto_noticias"></p>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    
+    <footer>
+        <!-- RODAPÉ -->
+        <section id="rodape">
+        <div class="container-grid">
+            <div class="info"><p><h1>Informações de contato</h1></p></div>
+            <div class="cnpj"><p>CNPJ</p></div>
+            <div class="cnpj_data"><p>46.190.994/0001-57</p></div>
+            <div class="email"><P>Email</P></div>
+            <div class="email_data"><p>contato@institutosomosagape.org</p></div>
+            <div class="telefone"><p>Telefone</p></div>
+            <div class="telefone_data"><p>(47) 99999-9999</p></div>
+            <div class="endereco"><p>Endereço</p></div>
+            <div class="endereco_data"><p>Rua Exemplo, 123 - Bairro, Joinville - SC, 89000-000</p></div>
+            <div class="instagram"><p>Instagram</p></div>
+            <div class="instagram_data"><a href="https://www.instagram.com/institutosomosagape" target="_blank">@institutosomosagape</a></div>
+        </div>
+        </section>  
+    </footer>
+    
+
+
+    
+
+
+    <!-- Link para o arquivo JS-->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+</body>
+    
+</html>

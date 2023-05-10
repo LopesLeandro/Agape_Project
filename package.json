@@ -1,0 +1,15 @@
+{
+  "name": "agape_project",
+  "version": "1.0.0",
+  "description": "## The institute: [Somos Agape](https://www.instagram.com/institutosomosagape/) ### 1. Our mission **Design a website for a nonprofit institution;**</br> **Design a mobile aplication (iOS & Android) to gather data from families (Data Mining) in a financial and underprivileged conditions;**</br> **Create an enviroment to show data driven insights;**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
