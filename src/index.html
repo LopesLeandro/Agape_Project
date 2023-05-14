@@ -12,46 +12,54 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;600&display=swap" rel="stylesheet">
   <!-- Link para o Icone do site -->
   <!-- <link rel="shortcut icon" href="Assets/logo.png" type="image/x-icon"> -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- Tailwindcss -->
+  <!-- init -->
+  <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch   -->
   <title>Somos Agape</title>
 </head>
-<body class="font-[Poppins] bg-gray-100 h-screen">
+<!-- Body -->
+<body class="antialiased font-[Poppins] bg-gray-100 h-screen">
   <!-- Header -->
-  <header class="bg-red-150">
+  <header class="">
     <!-- Navbar -->
-    <nav class="flex justify-between items-center w-[100%] px-[4vw] bg-[#812828] mx-auto">
+    <nav class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-white bg-[#812828]">
       <!-- Logo Image -->
       <div>
         <a href="#"><img class="w-16" src="../Assets/logo.png" alt="Agape Icon"></a>
       </div>
       <!-- Menus -->
-      <div class="text-white md:static absolute bg-[#812828] md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 ">
-        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-12">
+      <div class="nav-links hidden w-full md:flex md:items-center md:w-auto top-[0%]" id="menu">
+        <ul class="pt-4 text-base text-white md:flex md:justify-between md:pt-0">
           <li>
-            <a class="hover:text-gray-500" href="#">Home</a>
+            <a class="md:p-4 py-2 block hover:text-[#EAD24C]" href="#">Home</a>
           </li>
           <li>
-            <a class="hover:text-gray-500" href="#sobre">Sobre</a>
+            <a class="md:p-4 py-2 block hover:text-[#EAD24C]" href="#sobre">Sobre</a>
           </li>
           <li>
-            <a class="hover:text-gray-500" href="#projetos">Projetos</a>
+            <a class="md:p-4 py-2 block hover:text-[#EAD24C]" href="#projetos">Projetos</a>
           </li>
           <li>
-            <a class="hover:text-gray-500" href="#noticias">Notícias</a>
+            <a class="md:p-4 py-2 block hover:text-[#EAD24C]" href="#noticias">Notícias</a>
           </li>
           <li>
-            <a class="hover:text-gray-500" href="#rodape">Contato</a>
+            <a class="md:p-4 py-2 block hover:text-[#EAD24C]" href="#rodape">Contato</a>
           </li>
         </ul>
       </div>
       <!-- Login button -->
-      <div>
-        <button class="bg-[#EAD24C] text-white px-5 py-2 rounded-full hover:bg-gray-500">Login</button>
+      <div class="flex items-center gap-6">
+        <button class="bg-[#EAD24C] py-1 px-4 text-white rounded-xl hover:bg-gray-100 hover:text-[#000]">Login</button>
+          <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl text-[#fff] cursor-pointer md:hidden"></ion-icon>
       </div>
     </nav>
   </header>
+
   <main>
     <section>
-      
+    
     </section>
     <section>
 
@@ -63,5 +71,21 @@
   <footer>
 
   </footer>
+
+  <!-- IonIcons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e){
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+      navLinks.classList.toggle('top-[4%]')
+    }
+    // const button = document.querySelector('#menu-button');
+    // const menu = document.querySelector('#menu');
+    // button.addEventListener('click', () => {
+    // menu.classList.toggle('hidden');
+    // });
+  </script>
 </body>
 </html>

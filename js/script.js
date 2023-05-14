@@ -10,7 +10,6 @@ document.querySelectorAll(".navbar a").forEach(function(anchor) {
     });
   });
 
-
 // Fetch the text file
 fetch('Website_text/sobre.txt')
                 .then(response => response.text())
@@ -81,4 +80,4 @@ setInterval(function () {
         counter = 1;
         direction = 1;
     }
-}, 5000);
+}, 3000);
