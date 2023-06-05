@@ -32,9 +32,10 @@
 body{
     height: 100vh;
     background: var(--bg-color);
-    color: var(--text-color);
+    color: var(--content-text-color);
     font-size: 1.5rem;
     padding-top: 60px;
+
 }
 
 html{
@@ -216,6 +217,7 @@ header .navbar a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10.5rem;
 }
 
 
@@ -225,7 +227,7 @@ header .navbar a:hover{
 main h1 {
     font-size: 1.5em;
     font-weight: 600;
-    /* margin: 2rem 0 0.5rem 0; */
+    margin: 2rem 0 0.5rem 0;
     text-align: left;
 }
 
@@ -240,9 +242,8 @@ footer {
     background-color: #812828;
     color: white;
     text-align: center;
-    padding: 3em;
-    margin-top: 2em;
-    margin-bottom: 0;
+
+
     bottom: 0;
     width: 100%;
     height: 10%;
@@ -272,10 +273,6 @@ footer div p {
 }
 
 
-
-
-
-
 /* ====== Media Querys ========= */
 
 @media (min-width: 1280px){
@@ -284,6 +281,7 @@ footer div p {
         grid-template-rows: 1fr 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;     
+        background-color: #812828;
         grid-template-areas:
           "info cnpj email telefone endereco instagram"
           "info cnpj_data email_data telefone_data endereco_data instagram_data";
@@ -311,10 +309,5 @@ footer div p {
       
       .instagram_data { grid-area: instagram_data; }
 
-    .container-grid div p {
-        text-align: center;
-    }
+      .container-grid div p { text-align: center; }
 }
-
-
-
