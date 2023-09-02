@@ -14,7 +14,7 @@
 
 :root{
     --bg-color: #E7E8EC;
-    --text-color: #fff;
+    --text-color: #000000;
     --content-text-color: #181818;
     --background-transparency: rgba(24, 24, 24, 0.831);
     --main-color: #812828;
@@ -58,6 +58,7 @@ html::-webkit-scrollbar-thumb{
 header{
     width: 100vw;
     height: 60px;
+    color : white;
     top: 0;
     right: 0;
     z-index: 1000;
@@ -81,7 +82,7 @@ header .navbar{
 
 header .navbar a{
     font-size: min(1.5rem, 1.5vw);
-    color: var(--text-color);
+    color: white;
     margin: 0 3rem;
 }
 
@@ -92,17 +93,23 @@ header .navbar a:hover{
 .menu a{
     cursor: pointer;
     padding: .5rem 1rem;
-    color: var(--text-color);
+    color: white;
     font-size: min(1.5rem, 1.5vw);
 }
 
 .user{
     display: flex;
     align-items: center;
+    color: white;
+}
+
+.user a {
+    color: white;
+
 }
 
 .user i{
-    color: var(--text-color);
+    color: white;
     font-size: min(3rem, 3vw);
     margin-right: 1rem;
 }
