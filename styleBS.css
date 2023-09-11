@@ -23,12 +23,6 @@
     font-size: 100%; /* 1rem = 10px | 1.2rem = 12px*/
     scroll-behavior: smooth;
 }
-.nav-link {
-    color: var(--text-color) !important;
-}
-.nav-link.active {
-    color: var(--hover-color) !important;
-}
 
 header{
     /* width: 100vw;
@@ -45,3 +39,43 @@ header{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     transition: all .50s ease;
 }
+
+.nav-link {
+    color: var(--text-color) !important;
+}
+.nav-link.active {
+    color: var(--hover-color) !important;
+}
+
+.btn-outline-primary{
+    color: var(--hover-color) !important;
+    border-color: var(--hover-color) !important; 
+}
+
+.btn-outline-primary:hover {
+    color: var(--text-color) !important;
+    background-color: var(--hover-color) !important;
+    border-color: var(--hover-color) !important;
+}
+
+.btn-primary {
+    color: var(--text-color) !important;
+    background-color: var(--hover-color) !important;
+    border-color: var(--hover-color) !important;
+}
+
+.navbar-toggler.navbar-dark {
+    border-color: transparent !important;
+
+}
+
+@media (max-width: 991.98px) {  /* Ajuste esse valor de acordo com o ponto de quebra que você está usando */
+    #meuNavbar .navbar-nav .nav-link {
+        text-align: center;
+    }
+    #meuNavbar .meus-botoes {
+        justify-content: center;  /* Centraliza os botões horizontalmente */
+        width: 100%;               /* Utiliza a largura total disponível */
+    }
+}
+
