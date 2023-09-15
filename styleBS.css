@@ -86,6 +86,43 @@ header{
 }
 
 
+/* -------------------------------HEADER -------------------------------------------*/
+
+
+
+/* -------------------------------MAIN -------------------------------------------*/
+
+
+/* -------------------------------CAROUSEL-------------------------------------------*/
+
+.carousel-inner img {
+    max-height: 50000px;
+    height: auto;
+    width: auto;
+}
+
+/* -------------------------------PRINCIPAL CONTENT-------------------------------------------*/
+
+#principal-content .container .row div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+
+
+
 
 /* -------------------------------FOOTER -------------------------------------------*/
 
