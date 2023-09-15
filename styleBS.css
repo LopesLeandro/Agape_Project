@@ -79,3 +79,8 @@ header{
     }
 }
 
+
+.custom-background {
+    background-color: #812828; /* Substitua pela cor desejada em hexadecimal, RGB, ou outro formato de cor */
+    color: #ffffff; /* Cor do texto (opcional) */
+}
