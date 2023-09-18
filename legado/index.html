@@ -16,34 +16,70 @@
     <!-- Link para o arquivo Icon: BoxIcons-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!-- Google fonts-->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;600&display=swap" rel="stylesheet">
-    
+    <!-- BootStrap load -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- LINK PARA ICONE DO SITE-->
     <link rel="shortcut icon" href="Assets/logo.png" type="image/x-icon">
 
     <title>Somos Agape</title>
 </head>
 
-<body class="bg-blue-500">
-    <header>
-        <a href="#" class="logo"><img src="Assets/logo.png" alt=""></a>
-        <ul class="navbar">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#noticias">Notícias</a></li>
-            <li><a href="#rodape">Contato</a></li>
-        </ul>
-
-        <div class="menu">
-            <a href="Login_page/login.html" class="user"><i class="ri-user-fill"></i>Área do Voluntário</a>
-            <div class="bx bx-menu" id="menu-icon"></div>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-#812828">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/Assets/logo.png" alt="Bootstrap" width="50" height="50">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Página inicial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projetos">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#noticias">Notícias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button class="btn btn-outline-success" type="submit">Login</button>
+              <button class="btn btn-outline-success" type="submit">Cadastre-se</button>
+            </form>
+          </div>
         </div>
-    </header>
+      </nav>
+</header>
+<!-- 
+<header>
+    <a href="#" class="logo"><img src="Assets/logo.png" alt=""></a>
+    <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#noticias">Notícias</a></li>
+        <li><a href="#rodape">Contato</a></li>
+    </ul>
 
+    <div class="menu">
+        <a href="Login_page/login.html" class="user"><i class="ri-user-fill"></i>Área do Voluntário</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+</header> -->
+
+<body class="bg-blue-500">
     <div class="container">
         <!--- CARROUSEL -->
         <div id="carrousel" class="carrosel">
@@ -152,7 +188,8 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
     
 </html>

@@ -1,0 +1,144 @@
+*{
+    /* padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize; */
+    transition: all .3s cubic-bezier(.38,1.15,.7,1.12);
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-weight: normal;
+}
+
+:root{
+    --bg-color: #E7E8EC;
+    --text-color: #fff;
+    --content-text-color: #181818;
+    --background-transparency: rgba(24, 24, 24, 0.831);
+    --main-color: #812828;
+    --hover-color: #EAD24C;
+    --none-color: #fff;
+    font-size: 100%; /* 1rem = 10px | 1.2rem = 12px*/
+    scroll-behavior: smooth;
+}
+
+header{
+    /* width: 100vw;
+    height: 60px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between; */
+    background: var(--main-color);
+    /* padding: 2rem 12%; */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: all .50s ease;
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+}
+.nav-link.active {
+    color: var(--hover-color) !important;
+}
+
+.btn-outline-primary{
+    color: var(--hover-color) !important;
+    border-color: var(--hover-color) !important; 
+}
+
+.btn-outline-primary:hover {
+    color: var(--text-color) !important;
+    background-color: var(--hover-color) !important;
+    border-color: var(--hover-color) !important;
+}
+
+.btn-primary {
+    color: var(--text-color) !important;
+    background-color: var(--hover-color) !important;
+    border-color: var(--hover-color) !important;
+}
+
+.navbar-toggler.navbar-dark {
+    border-color: transparent !important;
+
+}
+
+@media (max-width: 991.98px) {  /* Ajuste esse valor de acordo com o ponto de quebra que você está usando */
+    #meuNavbar .navbar-nav .nav-link {
+        text-align: center;
+    }
+    #meuNavbar .meus-botoes {
+        justify-content: center;  /* Centraliza os botões horizontalmente */
+        width: 100%;               /* Utiliza a largura total disponível */
+    }
+}
+
+
+.custom-background {
+    background-color: #812828; /* Substitua pela cor desejada em hexadecimal, RGB, ou outro formato de cor */
+    color: #ffffff; /* Cor do texto (opcional) */
+}
+
+
+/* -------------------------------HEADER -------------------------------------------*/
+
+
+
+/* -------------------------------MAIN -------------------------------------------*/
+
+
+/* -------------------------------CAROUSEL-------------------------------------------*/
+
+.carousel-inner img {
+    max-height: 50000px;
+    height: auto;
+    width: auto;
+}
+
+/* -------------------------------PRINCIPAL CONTENT-------------------------------------------*/
+
+#principal-content .container .row div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+
+
+
+
+/* -------------------------------FOOTER -------------------------------------------*/
+
+
+footer .container .row div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footer-title {
+    text-align: center;
+}
+
+#logo-footer {
+    width: 150px;
+    height: 150px;
+    margin-right: 30px;
+
+}
